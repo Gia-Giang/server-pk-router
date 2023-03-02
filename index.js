@@ -16,6 +16,10 @@ app.post("/github-webhook-api", (req, res) => {
   res.send("Github webhook successdfully api");
 });
 
+app.post("/github-webhook-asd", (req, res) => {
+  res.send("Github webhook successdfully asd");
+});
+
 app.listen(port, () => {
   console.log("ss", port);
 });
