@@ -13,7 +13,7 @@ app.post("/github-webhook", (req, res) => {
 });
 
 app.post("/github-webhook-api", (req, res) => {
-  res.send("Github webhook successfully");
+  res.send("Github webhook successfully api");
 });
 
 app.listen(port, () => {
