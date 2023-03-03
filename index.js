@@ -1,21 +1,18 @@
 const express = require("express");
+const bodyParser = require("body-parser");
+
 const app = express();
+const port = 3000;
 
-require("dotenv").config();
-let port = process.env.PORT;
+app.use(bodyParser.json());
 
-app.get("/", (req, res) => {
-  res.send("hello world");
-});
-
-app.post("/github-webhook", (req, res) => {
-  res.send("Github webhook successfully");
-});
-
-app.post("/github-webhook-api", (req, res) => {
-  res.send("Github webhook successdfully api");
+app.post("/webhooks/<WEBHOOK_ID>", (req, res) => {
+  const event = req.body;
+  console.log("Received webhook event:", event);
+  // Process the event here...
+  res.sendStatus(200);
 });
 
 app.listen(port, () => {
-  console.log("ss", port);
+  console.log(`Hookdeck server listening on port ${port}`);
 });
