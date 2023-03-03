@@ -17,9 +17,9 @@ app.post("/github-webhook-apssi", (req, res) => {
 });
 
 app.post("/github-webhook-assssd", (req, res) => {
-  res.send("Github webhook successdfully asdddd");
+  res.send("Github webhook successdfully asdddddsfsddd");
 });
 
 app.listen(port, () => {
-  console.log("ss", port);
+  console.log("sssss", port);
 });
