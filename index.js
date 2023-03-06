@@ -5,19 +5,19 @@ require("dotenv").config();
 let port = process.env.PORT;
 
 app.get("/", (req, res) => {
-  res.send("hello world asasdasdsadsadsadsad");
+  res.send("hello world ");
 });
 
 app.post("/github-webhook", (req, res) => {
-  res.send("Github webhook successfully");
+  res.send("Github webhook ");
 });
 
 app.post("/github-webhook-apssi", (req, res) => {
-  res.send("Github webhook successdfully");
+  res.send("Github webhook ");
 });
 
 app.post("/github-webhook-assssd", (req, res) => {
-  res.send("Github webhook successdfully");
+  res.send("Github webhook ");
 });
 
 app.listen(port, () => {
