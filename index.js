@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/github-webhook", (req, res) => {
-  res.send("Github webhook ");
+  res.send("Github webhook sadasda ");
 });
 
 app.post("/github-webhook-apssi", (req, res) => {
