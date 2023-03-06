@@ -13,11 +13,11 @@ app.post("/github-webhook", (req, res) => {
 });
 
 app.post("/github-webhook-apssi", (req, res) => {
-  res.send("Github webhook successdfully apidd");
+  res.send("Github webhook successdfully");
 });
 
 app.post("/github-webhook-assssd", (req, res) => {
-  res.send("Github webhook successdfully asdddddsfsddd");
+  res.send("Github webhook successdfully");
 });
 
 app.listen(port, () => {
