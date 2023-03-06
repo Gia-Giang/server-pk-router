@@ -5,7 +5,7 @@ require("dotenv").config();
 let port = process.env.PORT;
 
 app.get("/", (req, res) => {
-  res.send("hello world asasdasdsadsadsadsad");
+  res.send("hello world");
 });
 
 app.post("/github-webhook", (req, res) => {
