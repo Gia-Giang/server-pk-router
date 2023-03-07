@@ -21,5 +21,7 @@ app.post("/github-webhook-assssd", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log("sssss", port);
+  process.exit();
 });
+
+
